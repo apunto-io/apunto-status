@@ -3,7 +3,7 @@ owner: apunto-io # Your GitHub organization or username, where this repository l
 repo: apunto-status # The name of this repository
 
 sites:
-  - name: Apunto Control
+  - name: Apunto App
     url: https://control.apunto.io/up
 
 status-website:
@@ -11,10 +11,10 @@ status-website:
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
   cname: status.apunto.io
   # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
+  logoUrl: https://raw.githubusercontent.com/apunto-io/apunto-status/master/assets/apunto_logo.png
   name: Apunto Status
-  introTitle: "**Apunto** - Estado del Sistema"
-  introMessage: Monitoreo en tiempo real del estado de los servicios de Apunto. Todos los datos se actualizan automáticamente desde nuestro [repositorio de GitHub](https://github.com/apunto-io/apunto-status).
+  introTitle: "**Apunto** - Monitor de Estado"
+  introMessage: Bienvenido al monitor de estatus de Apunto. Aquí encontrarás información en tiempo real sobre el estado de nuestros servicios. Todos los datos se actualizan automáticamente desde nuestro [repositorio de GitHub](https://github.com/apunto-io/apunto-status).
   navbar:
     - title: Estado
       href: /
