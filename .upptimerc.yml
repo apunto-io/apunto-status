@@ -23,4 +23,4 @@ status-website:
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
 
-# Force Setup CI to run
+# Trigger Setup CI workflow - Force execution
