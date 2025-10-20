@@ -8,6 +8,12 @@ sites:
     icon: https://raw.githubusercontent.com/apunto-io/apunto-status/master/assets/apunto_logo.png
     assignees:
       - JNajera
+  - name: Apunto Alpha
+    url: https://alpha.apunto.io/up
+    maxResponseTime: 2000
+    icon: https://raw.githubusercontent.com/apunto-io/apunto-status/master/assets/apunto_logo.png
+    assignees:
+      - JNajera
 
 status-website:
   cname: status.apunto.io
