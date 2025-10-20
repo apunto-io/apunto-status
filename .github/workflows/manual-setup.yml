@@ -1,0 +1,56 @@
+name: Manual Setup CI
+on:
+  workflow_dispatch:
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT || github.token }}
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: Install Upptime
+        run: npm install -g @upptime/uptime-monitor
+      
+      - name: Update template
+        run: npx @upptime/uptime-monitor update-template
+        env:
+          GH_PAT: ${{ secrets.GH_PAT || github.token }}
+      
+      - name: Update response time
+        run: npx @upptime/uptime-monitor response-time
+        env:
+          GH_PAT: ${{ secrets.GH_PAT || github.token }}
+          SECRETS_CONTEXT: ${{ toJson(secrets) }}
+      
+      - name: Update summary in README
+        run: npx @upptime/uptime-monitor readme
+        env:
+          GH_PAT: ${{ secrets.GH_PAT || github.token }}
+      
+      - name: Generate graphs
+        run: npx @upptime/uptime-monitor graphs
+        env:
+          GH_PAT: ${{ secrets.GH_PAT || github.token }}
+      
+      - name: Generate site
+        run: npx @upptime/uptime-monitor site
+        env:
+          GH_PAT: ${{ secrets.GH_PAT || github.token }}
+      
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git diff --staged --quiet || git commit -m "🚀 Manual setup: Generate Upptime files"
+          git push
+        env:
+          GH_PAT: ${{ secrets.GH_PAT || github.token }}
