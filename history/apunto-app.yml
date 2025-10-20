@@ -1,0 +1,7 @@
+name: Apunto App
+url: https://control.apunto.io/up
+method: GET
+timeout: 10000
+followRedirects: true
+ignoreTLS: false
+status: 200
