@@ -1,26 +1,24 @@
-# Change these first
-owner: apunto-io # Your GitHub organization or username, where this repository lives
-repo: apunto-status # The name of this repository
-# Trigger setup workflow
+owner: apunto-io
+repo: apunto-status
 
 sites:
   - name: Apunto App
     url: https://control.apunto.io/up
+    maxResponseTime: 2000
+    icon: https://raw.githubusercontent.com/apunto-io/apunto-status/master/assets/apunto_logo.png
+    assignees:
+      - JNajera
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
   cname: status.apunto.io
-  # baseUrl: /your-repo-name
   logoUrl: https://raw.githubusercontent.com/apunto-io/apunto-status/master/assets/apunto_logo.png
-  name: Apunto Status
-  introTitle: "**Apunto** - Monitor de Estado"
-  introMessage: Bienvenido al monitor de estatus de Apunto. Aquí encontrarás información en tiempo real sobre el estado de nuestros servicios. Todos los datos se actualizan automáticamente desde nuestro [repositorio de GitHub](https://github.com/apunto-io/apunto-status).
+  favicon: https://raw.githubusercontent.com/apunto-io/apunto-status/master/assets/apunto_logo.png
+  name: ''
+  theme: light
+  introTitle: "Sobre este sitio"
+  introMessage: Bienvenido al monitor de estatus de Apunto. Aquí encontrarás información en tiempo real sobre el estado de nuestros servicios.
   navbar:
-    - title: Estado
+    - title: Estatus
       href: /
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
