@@ -18,7 +18,7 @@ sites:
 status-website:
   cname: status.apunto.io
   logoUrl: https://raw.githubusercontent.com/apunto-io/apunto-status/master/assets/apunto_logo.png
-  favicon: https://raw.githubusercontent.com/apunto-io/apunto-status/master/assets/apunto_logo.png
+  favicon: https://raw.githubusercontent.com/apunto-io/apunto-status/master/assets/favicon.ico
   name: ''
   theme: light
   introTitle: "Sobre este sitio"
