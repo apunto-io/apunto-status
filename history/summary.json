@@ -22,17 +22,17 @@
     "url": "https://alpha.apunto.io/up",
     "icon": "https://raw.githubusercontent.com/apunto-io/apunto-status/master/assets/favicon.png",
     "slug": "apunto-alpha",
-    "status": "up",
+    "status": "degraded",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 277,
-    "timeDay": 275,
-    "timeWeek": 279,
-    "timeMonth": 285,
-    "timeYear": 277,
+    "time": 598,
+    "timeDay": 9913,
+    "timeWeek": 2688,
+    "timeMonth": 887,
+    "timeYear": 598,
     "dailyMinutesDown": {}
   }
 ]
