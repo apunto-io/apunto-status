@@ -1,7 +1,7 @@
 url: https://control.apunto.io/up
-status: down
-code: 502
-responseTime: 261
-lastUpdated: 2026-01-17T18:28:16.842Z
+status: up
+code: 200
+responseTime: 290
+lastUpdated: 2026-01-17T18:49:37.364Z
 startTime: 2025-10-20T04:32:22.701Z
 generator: Upptime <https://github.com/upptime/upptime>
