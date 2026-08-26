@@ -1,7 +1,7 @@
 url: https://alpha.apunto.io/up
-status: down
+status: degraded
 code: 502
-responseTime: 192
-lastUpdated: 2026-08-25T23:14:19.068Z
+responseTime: 2793
+lastUpdated: 2026-08-26T06:00:49.712Z
 startTime: 2025-10-20T04:37:16.942Z
 generator: Upptime <https://github.com/upptime/upptime>
